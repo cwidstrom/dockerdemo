@@ -1,4 +1,5 @@
 language: python
-script: pytest
+script:
+  - python -m pytest -v
 addons:
   srcclr: true
