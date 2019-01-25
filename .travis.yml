@@ -1,5 +1,5 @@
 language: python
 script:
-  - sudo python -m pytest -v
+  - sudo python pytest 
 addons:
   srcclr: true
