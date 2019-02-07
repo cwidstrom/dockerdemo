@@ -5,6 +5,10 @@ services:
 
 before_install:
   - docker build -t dockerdemo .
+  - cd /usr
+  - cd ..
+  - ls
+  - cd dockerdemo 
   - SRCCLR_ENABLE_CONTAINERS=true srcclr scan --image dockerdemo 
   
 script:
