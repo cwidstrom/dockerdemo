@@ -12,3 +12,4 @@ COPY app.py /src
 COPY __init__.py /src
 COPY generator.py /src
 CMD python /src/app.py
+RUN SRCCLR_ENABLE_CONTAINERS=true srcclr scan --image dockertest:5
