@@ -5,7 +5,6 @@ services:
 
 before_install:
   - docker build -t dockerdemo .
-  - SRCCLR_ENABLE_CONTAINERS=true srcclr scan --container dockerdemo 
   
 script:
     - python -m pytest -v

@@ -12,6 +12,3 @@ COPY app.py /src
 COPY __init__.py /src
 COPY generator.py /src
 CMD python /src/app.py
-RUN curl -sSL https://www.sourceclear.com/install | bash
-RUN srcclr activate "73ae83d1-5e78-4d05-a183-32f81298ebfc"
-RUN SRCCLR_ENABLE_CONTAINERS=true srcclr scan --image dockertest:5
